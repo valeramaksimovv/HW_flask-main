@@ -1,0 +1,63 @@
+* {
+    font-family: 'Gill Sans';
+}
+/* pierwsza deklaracja aside; kolor zielony */
+aside {
+    background: green;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 15% auto 20%;
+}
+
+header {
+    background: rgb(8, 221, 72);
+    grid-column: 1 / 4;
+}
+
+nav {
+    background: rgb(247, 232, 30);
+    grid-column: 1 / 4;
+    display: flex;
+}
+
+#left {
+    background: rgb(243, 98, 14);
+}
+
+section {
+    background: rgb(11, 224, 57);
+}
+/*druga deklaracja aisde; kolor żółty zostanie jako ostateczny (CSS jest czytany linia po linii i interpretowany
+na bieżąco */
+aside {
+    background: rgb(79, 85, 175);
+}
+
+main {
+    background: brown;    
+}
+
+.button {
+    background: rgb(13, 187, 65);
+    color: rgb(221, 233, 167);
+    text-align: center;
+    width: 20vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.active {
+    border: 1px solid lightcoral;
+}
+
+footer {
+    background:rgb(184, 95, 146);
+    grid-column: 1 / 4;
+}
+
