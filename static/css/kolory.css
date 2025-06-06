@@ -1,15 +1,16 @@
- * {
-    font-family: 'Roboto', sans-serif;
+* {
+  font-family: 'Bebas Neue', sans-serif;
+  box-sizing: border-box;
 }
 
 /* header & footer */
 header {
-    background: lightblue;
+    background: #bbffa0;
     grid-column: 1 / 4;
 }
 
 footer {
-    background:orange;
+    background:#1ce7b5;
     grid-column: 1 / 4;
 }
 
@@ -27,27 +28,27 @@ div {
 }
 
 section {
-    background: red;
+    background: #ebe716;
 }
 
 /* nav */
 nav {
-    background: white;
+    background: #f7bb8a;
     grid-column: 1 / 4;
     display: flex;
 }
 
 #left {
-    background: pink;
+    background: #19c930;
 }
 
 
 #right {
-    background: yellow;
+    background: #38eb0b;
 }
 
 main {
-    background: brown;    
+    background: #86b408;    
 }
 
 /* Text style */
@@ -59,7 +60,7 @@ h1 {
 }
 
 p {
-    color: #242424;
+    color: #5e5e5e;
     font-size: 20px;
     padding: 10px;
     text-align: center;
