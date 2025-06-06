@@ -1,9 +1,16 @@
-* {
+ * {
     font-family: 'Gill Sans';
 }
 /* pierwsza deklaracja aside; kolor zielony */
 aside {
     background: green;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 div {
@@ -63,7 +70,6 @@ footer {
 
 
 /* Galeria */
-
 .galeria {
     display:flex;
     flex-direction: column;
