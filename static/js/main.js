@@ -1,16 +1,21 @@
-document.querySelectorAll('.button').forEach( (btn) => {
-    btn.onclick = () => { //alert('Wcisnięto przyscik') 
-        fetch(`./html/${btn.dataset.var}`)
-        .then(r => {
-            r.text().then( s => {
-                document.querySelector("#center").innerHTML = s
-               // console.log(s)
-            })
-        }) 
-        .catch( res => {
-            console.log("Nie załadowano strony z powodu ", res)
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("loadGallery");
+
+  if (btn) {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); 
+      fetch("/static/html/galeria.html")
+        .then(res => {
+          if (!res.ok) throw new Error("Błąd wczytywania");
+          return res.text();
         })
-    
-    }
-    //console.log("Wykonałam się!", btn)
-})
+        .then(html => {
+          document.getElementById("center").innerHTML = html;
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("center").innerHTML = `<p style="color:red;">Błąd ładowania galerii.</p>`;
+        });
+    });
+  }
+});
