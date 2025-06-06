@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="author" content="FlaskTutor" />
+    <meta name="keywords" content="flask, strona, www" />
+    <meta name="descrition" content="Przykładowa strona dla Flask" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styl.css') }}" />
+    <script defer="defer" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
       <header>
@@ -13,10 +18,15 @@
         </header>
         <!--main-->
         <section>
-
-
-
-            
+        <div class="galeria">
+            <div class="image">
+                <img src="/img/airplane.png" alt = "airplane image" style="width: auto;">
+                <img src="/img/bus.png" alt = "bus image" style="width: auto;">
+            </div>
+            <div class="image">
+                <img src="/img/train.png" alt = "train image" style="width: auto;">
+                <img src="/img/ship.png" alt ="ship image" style="width: auto;">
+            </div>
         </section>
         <!--main-->
         <footer>
